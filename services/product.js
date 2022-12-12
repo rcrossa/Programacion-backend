@@ -1,6 +1,6 @@
 const fs = require('fs');
 exports.list = function (req, res, next) {
-    fs.readFile('./products.json', 'utf8', (error, contenido) => {
+    fs.readFile('./data/products.json', 'utf8', (error, contenido) => {
         if (error) {
             console.log(error)
         } else {
@@ -12,7 +12,7 @@ exports.list = function (req, res, next) {
 }
 
 exports.list1 = function (req, res, next) {
-    fs.readFile('./products.json', 'utf8', (error, contenido) => {
+    fs.readFile('./data/products.json', 'utf8', (error, contenido) => {
         if (error) {
             console.log(error)
         } else {
